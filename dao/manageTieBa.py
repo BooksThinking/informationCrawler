@@ -37,22 +37,10 @@ def tiebaSpider(url, beginPage, endPage):
     """
     for page in range(beginPage, endPage + 1):
         pn = (page - 1) * 50
-        filename = "第" + str(page) + "页.html"
+        filename = str(page) + ".html"
         fullurl = url + "&pn=" + str(pn)
         print(fullurl)
         html = loadPage(fullurl, filename)
         print("网站内容：", html)
         writePage(html, filename)
         print("谢谢使用")
-
-
-if __name__ == "__main__":
-    kw = input("请输入需要爬取的贴吧名:")
-    beginPage = int(input("请输入起始页："))
-    endPage = int(input("请输入结束页："))
-
-    url = "http://tieba.baidu.com/f?"
-    key = parse.urlencode({"kw": kw})  # .encode("utf-8")
-    fullurl = url + key
-    tiebaSpider(fullurl, beginPage, endPage)
-    # print(parse.urlencode("关于Python在"))
