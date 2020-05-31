@@ -1,4 +1,5 @@
 from urllib.request import urlopen
+import os
 from urllib import parse
 from bs4 import BeautifulSoup
 
@@ -47,7 +48,7 @@ def tiebaSpider(url, beginPage, endPage):
         writePage(html, filename)
         print("谢谢使用")
 
-def tieziSpider(url, beginPage, endPage):
+def tieziSpider(url, append, beginPage, endPage):
     """
         作用：贴吧爬虫调度器，负责组合处理每个页面的url
         url : 贴吧url的前部分
@@ -55,16 +56,20 @@ def tieziSpider(url, beginPage, endPage):
         endPage : 结束页
     """
     for page in range(beginPage, endPage + 1):
-        filename = "tiezi" + str(page) + ".html"
-        print(url)
-        html = loadPage(url, filename)
+        filename = append[3:] + "tiezi" + str(page) + ".html"
+        # print(url)
+        fullurl = url + append + "?pn=" + str(page)
+        html = loadPage(fullurl, filename)
         # print("网站内容：", html)
         writePage(html, filename)
         print("谢谢使用")
 
 if __name__ == '__main__':
-    beginPage = int(input("请输入起始页："))
-    endPage = int(input("请输入结束页："))
-    url = "https://tieba.baidu.com" + "/p/6168133290"
-    tieziSpider(url,1,1)
+    # beginPage = int(input("请输入起始页："))
+    # endPage = int(input("请输入结束页："))
+    # url = "https://tieba.baidu.com" + "/p/6168133290"
+    # tieziSpider(url,1,1)
+    a = open("../data/data1.txt","w")
+    a.write("sadasdsad")
+    a.close()
 
