@@ -1,9 +1,10 @@
 import manageTieBa
-import os
 from urllib import parse
 from bs4 import BeautifulSoup
 
 if __name__ == '__main__':
+    # line = "asdasd'sdaasd\nasds"
+    # print(line.replace("\n", "").replace("'",""))
     kw = input("请输入需要爬取的贴吧名:")
     beginPage = int(input("请输入起始页："))
     endPage = int(input("请输入结束页："))
@@ -15,4 +16,4 @@ if __name__ == '__main__':
     manageTieBa.tiebaSpider(fullurl, beginPage, endPage)
     for i in range(0,abs(beginPage - endPage)+1):
         manageTieBa.writeData(i)
-
+    manageTieBa.write_mysql()

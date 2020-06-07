@@ -1,6 +1,6 @@
 from urllib.request import urlopen
+import pymysql
 import os
-from urllib import parse
 from bs4 import BeautifulSoup
 
 def loadPage(url, filename):
@@ -115,6 +115,39 @@ def tieziSpider(url, append, beginPage, endPage):
         writePage(html, filename)
         # print("谢谢使用")
 
+def write_mysql():
+    conn = pymysql.Connect(
+        host='localhost',
+        port=3306,
+        user='root',
+        passwd='1245586921',
+        db='crawler',
+        charset='utf8mb4'
+    )
+
+    # 获取游标
+    cursor = conn.cursor()
+    # sql = "INSERT INTO crawler.crawlerdata(userName,userLevel,userMessage,userTime) values (%s,%s,%s,%s)"
+    # line = ['可可麦茶', '1', '            这一话当年在日本被骂惨了…日本别的不说，主流观念“我戳你伤口可以，但是你揭我伤疤绝对不行！(▼皿▼', '")”真的是挺恶心（这跟文化还有背景教育有关，无关其他，理性看待）', '2020-02-08 20:38']
+    # cursor.execute(sql, (line[0], line[1], line[2], line[3]))
+    # conn.commit()
+    file_path = "../data/"
+    dirs = os.listdir(file_path)
+    for file in dirs:
+        file = open(file_path + file, encoding='UTF-8')
+        while True:
+            line = file.readline().replace("\n", "").split("#")
+            if line == ['']:
+                break
+            else:
+                sql = "INSERT INTO crawler.crawlerdata(userName,userLevel,userMessage,userTime) values (%s,%s,%s,%s)"
+                for i in range(0, 2):
+                    cursor.execute(sql, (line[0], line[1], line[2], line[-1]))
+                    print("正在操作")
+                print("commit 成功")
+                conn.commit()
+
+
 if __name__ == '__main__':
     file = "6720490845tiezi1.html"
     HTMLFile2 = open(file, 'r', encoding='utf-8')
@@ -122,3 +155,35 @@ if __name__ == '__main__':
     soup2 = BeautifulSoup(htmlhandle2, 'html.parser')
     tiezi_lv_list = soup2.find_all(name="div", attrs={"class": "d_badge_lv"})
     print(len(tiezi_lv_list))
+    # 建立数据库连接
+    # conn = pymysql.Connect(
+    #     host='localhost',
+    #     port=3306,
+    #     user='root',
+    #     passwd='1245586921',
+    #     db='crawler',
+    #     charset='utf8mb4'
+    # )
+    #
+    # # 获取游标
+    # cursor = conn.cursor()
+    # # sql = "INSERT INTO crawler.crawlerdata(userName,userLevel,userMessage,userTime) values (%s,%s,%s,%s)"
+    # # line = ['可可麦茶', '1', '            这一话当年在日本被骂惨了…日本别的不说，主流观念“我戳你伤口可以，但是你揭我伤疤绝对不行！(▼皿▼', '")”真的是挺恶心（这跟文化还有背景教育有关，无关其他，理性看待）', '2020-02-08 20:38']
+    # # cursor.execute(sql, (line[0], line[1], line[2], line[3]))
+    # # conn.commit()
+    # file_path = "../data/"
+    # dirs = os.listdir(file_path)
+    # for file in dirs:
+    #     file = open(file_path + file, encoding='UTF-8')
+    #     while True:
+    #         line = file.readline().replace("\n", "").split("#")
+    #         if line == ['']:
+    #             break
+    #         else:
+    #             sql = "INSERT INTO crawler.crawlerdata(userName,userLevel,userMessage,userTime) values (%s,%s,%s,%s)"
+    #             for i in range(0, 2):
+    #                 cursor.execute(sql, (line[0], line[1], line[2], line[-1]))
+    #                 print("正在操作")
+    #             print("commit 成功")
+    #             conn.commit()
+

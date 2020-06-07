@@ -8,13 +8,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crawler@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crawler@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="crawler@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="crawler: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dao/initData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="428">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -25,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dao/manageTieBa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+            <state relative-caret-position="833">
+              <caret line="151" column="4" selection-start-line="151" selection-start-column="4" selection-end-line="156" selection-end-column="29" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -35,10 +65,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+        <entry file="file://$PROJECT_DIR$/data/data4920964468.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="309" selection-start-line="309" selection-end-line="309" />
+            <state relative-caret-position="128">
+              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -94,6 +124,7 @@
         <option value="$PROJECT_DIR$/dao/asss.py" />
         <option value="$PROJECT_DIR$/data/data1.txt" />
         <option value="$PROJECT_DIR$/dao/__init__.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/dao/manageTieBa.py" />
         <option value="$PROJECT_DIR$/dao/initData.py" />
       </list>
@@ -120,11 +151,6 @@
             <path>
               <item name="informationCrawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="informationCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="informationCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="informationCrawler" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -140,11 +166,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -165,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.initData">
+  <component name="RunManager" selected="Python.manageTieBa">
     <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="informationCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -278,8 +306,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.initData" />
         <item itemvalue="Python.manageTieBa" />
+        <item itemvalue="Python.initData" />
         <item itemvalue="Python.asss" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python.__init__ (1)" />
@@ -316,58 +344,66 @@
       <workItem from="1590885047756" duration="10310000" />
       <workItem from="1590970947173" duration="3464000" />
       <workItem from="1591017648062" duration="771000" />
-      <workItem from="1591060589461" duration="6785000" />
+      <workItem from="1591060589461" duration="7992000" />
+      <workItem from="1591141195611" duration="599000" />
+      <workItem from="1591158116620" duration="7000" />
+      <workItem from="1591413538859" duration="606000" />
+      <workItem from="1591495600974" duration="2014000" />
+      <workItem from="1591497910580" duration="4919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87342000" />
+    <option name="totallyTimeSpent" value="96694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4985294" visible="true" weight="0.277666" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4985294" weight="0.2930919" />
       <window_info id="Structure" order="2" sideWeight="0.50147057" side_tool="true" weight="0.2622401" />
-      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.7" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.49411765" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.4779412" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.5176471" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32941177" />
-      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32941177" />
+      <window_info anchor="right" id="Database" order="0" weight="0.3293092" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="SciView" order="2" weight="0.32997987" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4985294" visible="true" weight="0.277666" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4985294" weight="0.2930919" />
       <window_info id="Structure" order="2" sideWeight="0.50147057" side_tool="true" weight="0.2622401" />
-      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.7" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.6485294" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.52205884" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.5176471" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32941177" />
-      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32941177" />
+      <window_info anchor="right" id="Database" order="0" weight="0.3293092" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="SciView" order="2" weight="0.32997987" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout-to-restore>
@@ -376,30 +412,17 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/informationCrawler$initData.coverage" NAME="initData Coverage Results" MODIFIED="1591088613460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
+    <SUITE FILE_PATH="coverage/informationCrawler$initData.coverage" NAME="initData Coverage Results" MODIFIED="1591503217640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
     <SUITE FILE_PATH="coverage/informationCrawler$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1590291587795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
     <SUITE FILE_PATH="coverage/informationCrawler$asss.coverage" NAME="asss Coverage Results" MODIFIED="1590849057532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
     <SUITE FILE_PATH="coverage/informationCrawler$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1590153101646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
-    <SUITE FILE_PATH="coverage/informationCrawler$manageTieBa.coverage" NAME="manageTieBa Coverage Results" MODIFIED="1591088064235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
+    <SUITE FILE_PATH="coverage/informationCrawler$manageTieBa.coverage" NAME="manageTieBa Coverage Results" MODIFIED="1591503641593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="244" selection-start-line="244" selection-end-line="244" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/what.txt" />
-    <entry file="file://$PROJECT_DIR$/dao/1.html" />
-    <entry file="file://$PROJECT_DIR$/dao/100.html" />
-    <entry file="file://$PROJECT_DIR$/dao/101.html" />
     <entry file="file://$PROJECT_DIR$/dao/tiezi1.html" />
     <entry file="file://$PROJECT_DIR$/dao/tiezi5.html" />
     <entry file="file://$PROJECT_DIR$/data/data.txt1" />
-    <entry file="file://$PROJECT_DIR$/data/data7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data7.txt" />
     <entry file="file://$PROJECT_DIR$/dao/asss.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -435,12 +458,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/6707732467tiezi2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data14.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/6707732467tiezi2.html" />
+    <entry file="file://$PROJECT_DIR$/data/data14.txt" />
     <entry file="file://$PROJECT_DIR$/dao/6718562943tiezi1.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -454,78 +473,27 @@
     <entry file="file://$PROJECT_DIR$/entities/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/data10.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data5.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data8.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data9.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data12.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data19.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data11.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data13.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data22.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data21.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data40.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data4.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data25.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data50.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data47.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data27.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data10.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data5.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data8.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data9.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data12.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data6.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data19.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data11.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data13.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data22.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data21.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data2.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data3.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data40.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data4.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data25.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data50.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data47.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data27.txt" />
+    <entry file="file://$PROJECT_DIR$/data/data1.txt" />
     <entry file="file://$PROJECT_DIR$/dao/tieba1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data4920964468.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/6708661909tiezi27.html">
@@ -560,17 +528,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3316fcd0-4391-4a0e-aa90-83ad5c7ce650/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b6f95be8-5dc6-4967-baa2-18e84890f90f/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://b6f95be8-5dc6-4967-baa2-18e84890f90f/schema/crawler/table/test">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="4677dc6f-bfb9-4c4c-82a3-293bdefd71b2">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/5244940108tiezi1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://b6f95be8-5dc6-4967-baa2-18e84890f90f/schema/crawler/table/crawlerdata">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="4fc0a4e8-f5fc-4175-9faf-b220fd4a063b">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="227">
           <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data4920964468.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/manageTieBa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+        <state relative-caret-position="833">
+          <caret line="151" column="4" selection-start-line="151" selection-start-column="4" selection-end-line="156" selection-end-column="29" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -579,8 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/initData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="428">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
