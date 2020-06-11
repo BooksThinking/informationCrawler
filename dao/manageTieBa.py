@@ -137,6 +137,7 @@ def write_mysql():
         file = open(file_path + file, encoding='UTF-8')
         while True:
             line = file.readline().replace("\n", "").split("#")
+            print(line)
             if line == ['']:
                 break
             else:

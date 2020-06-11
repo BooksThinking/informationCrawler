@@ -1130,7 +1130,7 @@
     <table id="284" parent="2" name="crawlerdata"/>
     <column id="285" parent="284" name="userName">
       <Position>1</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="286" parent="284" name="userLevel">
@@ -1140,7 +1140,7 @@
     </column>
     <column id="287" parent="284" name="userMessage">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(5000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="288" parent="284" name="userTime">

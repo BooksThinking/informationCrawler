@@ -17,7 +17,7 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_BUTTON, self.OnButton1, self.btn1)
 
     def OnButton1(self, event):
-        initData.init_data(self.text_1.GetValue(),int(self.text_2.GetValue()),int(self.text_3.GetValue()))
+        initData.init_data(self.text_1.GetValue(), int(self.text_2.GetValue()), int(self.text_3.GetValue()))
         # print(self.text_1.GetValue())
         # print(int(self.text_2.GetValue()))
         # print(int(self.text_3.GetValue()))
